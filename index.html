@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firdavs Samadov — DevOps & Cloud Engineer</title>
+  <meta name="description" content="DevOps & Cloud Engineer specializing in AWS, Kubernetes, Terraform, ArgoCD, and CI/CD automation. Building production-grade cloud infrastructure.">
+  <meta name="keywords" content="DevOps, Cloud Engineer, AWS, Kubernetes, Terraform, ArgoCD, GitOps, SRE">
+  <meta name="author" content="Firdavs Samadov">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Firdavs Samadov — DevOps & Cloud Engineer">
+  <meta property="og:description" content="Building production-grade cloud infrastructure with AWS, Kubernetes, Terraform, and GitOps.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- NAVIGATION -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>FS<span class="logo-bracket"> /&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- HERO SECTION -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-greeting" data-aos="fade-up" data-aos-delay="100">
+          <span class="terminal-prompt">$</span> Hello, I'm
+        </div>
+        <h1 class="hero-name" data-aos="fade-up" data-aos-delay="200">
+          Firdavs<br>Samadov
+        </h1>
+        <div class="hero-title" data-aos="fade-up" data-aos-delay="300">
+          <span class="title-text">DevOps & Cloud Engineer</span>
+        </div>
+        <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+          I design and deploy production-grade cloud infrastructure on AWS — from
+          Terraform provisioning to Kubernetes orchestration, GitOps delivery, and
+          full observability stacks. Security-first, automation-always.
+        </p>
+        <div class="hero-cta" data-aos="fade-up" data-aos-delay="500">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+          <!-- UPDATE: Replace with your actual resume PDF path -->
+          <a href="assets/resume.pdf" class="btn btn-ghost" download>
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+          <div class="stat">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Production Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years IT Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">firdavs@cloud ~ </span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line" id="typeLine1"></div>
+            <div class="terminal-line" id="typeLine2"></div>
+            <div class="terminal-line" id="typeLine3"></div>
+            <div class="terminal-line" id="typeLine4"></div>
+            <div class="terminal-line" id="typeLine5"></div>
+            <div class="terminal-line" id="typeLine6"></div>
+            <span class="terminal-cursor">▋</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- ABOUT SECTION -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <span class="section-number">01.</span> About Me
+      </h2>
+      <div class="about-grid">
+        <div class="about-photo" data-aos="fade-right">
+          <!-- UPDATE: Replace src with your actual photo -->
+          <div class="photo-frame">
+            <img src="assets/images/profile.jpg" alt="Firdavs Samadov" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'photo-placeholder\'><i class=\'fas fa-user\'></i></div>';">
+          </div>
+          <div class="photo-decoration"></div>
+        </div>
+        <div class="about-text" data-aos="fade-left">
+          <p>
+            I'm a DevOps and Cloud Engineer with a foundation in networking
+            <strong>(Cisco CCNA)</strong> and systems administration, passionate about
+            building reliable, scalable infrastructure and automating everything
+            that can be automated.
+          </p>
+          <p>
+            I work across the full infrastructure stack — from provisioning cloud
+            resources with <strong>Terraform</strong>, to containerizing applications
+            with <strong>Docker</strong>, deploying on <strong>Kubernetes</strong>
+            (k3s and EKS), and setting up GitOps pipelines with <strong>ArgoCD</strong>.
+          </p>
+          <p>
+            My approach to infrastructure is <strong>security-first</strong> — I integrate
+            scanning tools (Trivy, Checkov, Gitleaks) directly into CI pipelines so
+            security is enforced automatically, not as an afterthought.
+          </p>
+          <p>
+            On the observability side, I build monitoring stacks with
+            <strong>Prometheus, Grafana, and Loki</strong> — because you can't
+            operate what you can't see.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Tokyo, Japan</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Master's — Shenyang Aerospace University</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-briefcase"></i>
+              <span>Open to DevOps / Cloud / SRE roles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- SKILLS SECTION -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <span class="section-number">02.</span> Technical Skills
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-category-header">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud (AWS)</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">EC2</span>
+            <span class="skill-tag">EKS</span>
+            <span class="skill-tag">RDS</span>
+            <span class="skill-tag">S3</span>
+            <span class="skill-tag">ECR</span>
+            <span class="skill-tag">IAM</span>
+            <span class="skill-tag">VPC</span>
+            <span class="skill-tag">Route 53</span>
+            <span class="skill-tag">ALB/NLB</span>
+            <span class="skill-tag">CloudWatch</span>
+            <span class="skill-tag">Secrets Manager</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="150">
+          <div class="skill-category-header">
+            <i class="fas fa-dharmachakra"></i>
+            <h3>Kubernetes</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS EKS</span>
+            <span class="skill-tag">k3s</span>
+            <span class="skill-tag">kubectl</span>
+            <span class="skill-tag">Helm 3</span>
+            <span class="skill-tag">HPA</span>
+            <span class="skill-tag">KEDA</span>
+            <span class="skill-tag">RBAC</span>
+            <span class="skill-tag">PVC / EBS CSI</span>
+            <span class="skill-tag">Ingress</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-category-header">
+            <i class="fas fa-code-branch"></i>
+            <h3>IaC & Config</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Terraform</span>
+            <span class="skill-tag">Ansible</span>
+            <span class="skill-tag">Helm Charts</span>
+            <span class="skill-tag">Remote State (S3)</span>
+            <span class="skill-tag">Modules</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="250">
+          <div class="skill-category-header">
+            <i class="fas fa-infinity"></i>
+            <h3>CI/CD & GitOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">ArgoCD</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">GitOps</span>
+            <span class="skill-tag">cert-manager</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-category-header">
+            <i class="fas fa-shield-alt"></i>
+            <h3>DevSecOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Trivy</span>
+            <span class="skill-tag">Checkov</span>
+            <span class="skill-tag">Gitleaks</span>
+            <span class="skill-tag">IMDSv2</span>
+            <span class="skill-tag">Least-Privilege IAM</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="350">
+          <div class="skill-category-header">
+            <i class="fas fa-chart-line"></i>
+            <h3>Monitoring</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Prometheus</span>
+            <span class="skill-tag">Grafana</span>
+            <span class="skill-tag">Loki</span>
+            <span class="skill-tag">Promtail</span>
+            <span class="skill-tag">CloudWatch</span>
+            <span class="skill-tag">Alertmanager</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-category-header">
+            <i class="fab fa-docker"></i>
+            <h3>Containers</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Docker Compose</span>
+            <span class="skill-tag">Multi-stage Builds</span>
+            <span class="skill-tag">AWS ECR</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="450">
+          <div class="skill-category-header">
+            <i class="fas fa-terminal"></i>
+            <h3>OS & Scripting</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Ubuntu</span>
+            <span class="skill-tag">CentOS</span>
+            <span class="skill-tag">Bash</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">systemd</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">Fail2ban</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+          <div class="skill-category-header">
+            <i class="fas fa-network-wired"></i>
+            <h3>Networking</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">TCP/IP</span>
+            <span class="skill-tag">VPC Design</span>
+            <span class="skill-tag">Subnetting</span>
+            <span class="skill-tag">DNS</span>
+            <span class="skill-tag">Cisco (CCNA)</span>
+            <span class="skill-tag">VLANs</span>
+            <span class="skill-tag">Load Balancing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- PROJECTS SECTION -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <span class="section-number">03.</span> Featured Projects
+      </h2>
+
+      <!-- Project 1 -->
+      <div class="project-card project-featured" data-aos="fade-up">
+        <div class="project-image">
+          <!-- UPDATE: Replace with your actual screenshot -->
+          <img src="assets/images/project-commerce.png" alt="Cloud-Native Commerce Platform" onerror="this.style.display='none'">
+          <div class="project-image-overlay">
+            <span>Cloud-Native E-Commerce on AWS EKS</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-label">Featured Project</div>
+          <h3>Cloud-Native Commerce Platform</h3>
+          <div class="project-description">
+            <p>
+              Production-grade Saleor Commerce 3.20 deployed on <strong>AWS EKS v1.31</strong>
+              with GitOps (ArgoCD), dual autoscaling (<strong>HPA + KEDA</strong>), 4-stage
+              DevSecOps CI/CD pipeline (Gitleaks + Checkov + Trivy), and full observability
+              (Prometheus + Grafana + Loki). Deployed to both k3s and EKS with
+              <strong>zero Helm chart changes</strong> — proving Kubernetes portability.
+            </p>
+          </div>
+          <div class="project-tech">
+            <span>AWS EKS</span><span>Terraform</span><span>ArgoCD</span>
+            <span>HPA</span><span>KEDA</span><span>GitHub Actions</span>
+            <span>Trivy</span><span>Checkov</span><span>Prometheus</span>
+            <span>Grafana</span><span>Loki</span><span>Helm</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Fedia-2211/cloud-native-commerce-platform" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> Source Code
+            </a>
+            <a href="https://shop.samadov.xyz" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card project-featured reverse" data-aos="fade-up">
+        <div class="project-image">
+          <img src="assets/images/project-gitops.png" alt="GitOps Kubernetes Platform" onerror="this.style.display='none'">
+          <div class="project-image-overlay">
+            <span>GitOps on Kubernetes with ArgoCD</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-label">Featured Project</div>
+          <h3>GitOps Kubernetes Platform</h3>
+          <div class="project-description">
+            <p>
+              2-node <strong>k3s cluster</strong> on AWS with full GitOps workflow:
+              GitHub Actions builds → ECR push → ArgoCD auto-deploys. Wiki.js with
+              HTTPS (cert-manager + Let's Encrypt), custom <strong>Helm charts</strong>,
+              Prometheus + Grafana monitoring, and Loki log aggregation.
+            </p>
+          </div>
+          <div class="project-tech">
+            <span>k3s</span><span>ArgoCD</span><span>Terraform</span>
+            <span>Helm</span><span>GitHub Actions</span><span>Prometheus</span>
+            <span>Grafana</span><span>Loki</span><span>RDS Postgres</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Fedia-2211/gitops-k8s-platform" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card project-featured" data-aos="fade-up">
+        <div class="project-image">
+          <img src="assets/images/project-enterprise.png" alt="Enterprise Application Platform" onerror="this.style.display='none'">
+          <div class="project-image-overlay">
+            <span>3-Tier Infrastructure on AWS</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-label">Featured Project</div>
+          <h3>Enterprise Application Platform</h3>
+          <div class="project-description">
+            <p>
+              3-tier production infrastructure on AWS: <strong>Terraform</strong> (7 modules, 78 resources),
+              <strong>Ansible</strong> (9 roles), Jenkins CI/CD. 6 EC2 servers running Gitea (HA),
+              MySQL 8, RabbitMQ, Memcached. ALB with ACM certificate, CloudWatch monitoring
+              with SNS alerting. Mixed OS: Ubuntu 22.04 + CentOS Stream 9.
+            </p>
+          </div>
+          <div class="project-tech">
+            <span>Terraform</span><span>Ansible</span><span>Jenkins</span>
+            <span>AWS EC2</span><span>Gitea</span><span>MySQL</span>
+            <span>RabbitMQ</span><span>Nginx</span><span>CloudWatch</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Fedia-2211/enterprise-application-platform" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- EXPERIENCE SECTION -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <span class="section-number">04.</span> Experience
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Aug 2023 — Jul 2024</div>
+            <h3>System Administrator</h3>
+            <h4>Technological University of Tajikistan</h4>
+            <p>
+              Installed, configured, and maintained network servers and infrastructure.
+              Monitored local network traffic, diagnosed performance issues, and provided
+              technical support for staff and students. Managed virtualization environments
+              and server maintenance schedules.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Sep 2022 — Jun 2023</div>
+            <h3>Network Administrator</h3>
+            <h4>CJSC Bank Arvand</h4>
+            <p>
+              Managed secure network operations for a financial institution. Installed,
+              maintained, and monitored Cisco networking devices across bank branches.
+              Implemented network security policies, access controls, and incident response procedures.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2021 — 2022</div>
+            <h3>Network Engineer</h3>
+            <h4>Technological University of Tajikistan</h4>
+            <p>
+              Installed and maintained network equipment. Organized structured cabling
+              for optimal performance. Provided technical support and troubleshot
+              network connectivity issues.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- EDUCATION SECTION -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <span class="section-number">05.</span> Education
+      </h2>
+      <div class="education-grid">
+        <div class="education-card" data-aos="fade-up">
+          <div class="education-icon"><i class="fas fa-university"></i></div>
+          <h3>Master's Degree</h3>
+          <h4>Information & Communication Engineering</h4>
+          <p class="education-school">Shenyang Aerospace University, China</p>
+          <p class="education-date">Sep 2024 — Present</p>
+        </div>
+        <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Bachelor of Engineering</h3>
+          <h4>Computer Systems, Networking & Telecommunications</h4>
+          <p class="education-school">Technological University of Tajikistan</p>
+          <p class="education-date">2020 — 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- CERTIFICATIONS SECTION -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <span class="section-number">06.</span> Certifications
+      </h2>
+      <div class="certs-grid">
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="cert-icon"><i class="fas fa-award"></i></div>
+          <h3>Decoding DevOps</h3>
+          <p>Udemy · Jun 2026</p>
+          <a href="https://www.udemy.com/certificate/UC-6b77b4e9-56cb-49a6-9111-04201a8cc84a/" target="_blank" class="cert-link">View Credential <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>CCNAv7: Enterprise Networking</h3>
+          <p>Cisco · Dec 2022</p>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>CCNAv7: Switching & Routing</h3>
+          <p>Cisco · Feb 2022</p>
+          <a href="https://www.credly.com/badges/c861188a-79b1-4d97-af66-44f994b4fea2" target="_blank" class="cert-link">View Credential <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>CCNA R&S: Intro to Networks</h3>
+          <p>Cisco · May 2021</p>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="cert-icon"><i class="fab fa-linux"></i></div>
+          <h3>NDG Linux Essentials</h3>
+          <p>Cisco / NetAcad · Apr 2021</p>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="cert-icon"><i class="fas fa-laptop"></i></div>
+          <h3>IT Essentials: PC Hardware</h3>
+          <p>Cisco / NetAcad · Nov 2020</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- GITHUB STATS SECTION -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section class="section" id="github">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <span class="section-number">07.</span> GitHub Activity
+      </h2>
+      <div class="github-stats" data-aos="fade-up">
+        <div class="github-card">
+          <img src="https://github-readme-stats.vercel.app/api?username=Fedia-2211&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&icon_color=38bdf8&text_color=c9d1d9" alt="GitHub Stats" loading="lazy">
+        </div>
+        <div class="github-card">
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fedia-2211&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9" alt="Top Languages" loading="lazy">
+        </div>
+      </div>
+      <div class="github-contrib" data-aos="fade-up">
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=Fedia-2211&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=38bdf8&line=38bdf8&point=ffffff" alt="Contribution Graph" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- CONTACT SECTION -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <span class="section-number">08.</span> Get In Touch
+      </h2>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <p class="contact-intro">
+            I'm actively looking for Junior DevOps, Cloud Engineer, or SRE opportunities
+            — remote or based in Tokyo, Japan. Whether you have a question or just want
+            to say hello, feel free to reach out.
+          </p>
+          <div class="contact-methods">
+            <a href="mailto:samadovfirdavs02@gmail.com" class="contact-method">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span class="contact-method-label">Email</span>
+                <span class="contact-method-value">samadovfirdavs02@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/firdavs-samadov-0b82603b6/" target="_blank" class="contact-method">
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <span class="contact-method-label">LinkedIn</span>
+                <span class="contact-method-value">Firdavs Samadov</span>
+              </div>
+            </a>
+            <a href="https://github.com/Fedia-2211" target="_blank" class="contact-method">
+              <i class="fab fa-github"></i>
+              <div>
+                <span class="contact-method-label">GitHub</span>
+                <span class="contact-method-value">Fedia-2211</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <!-- Using Formspree for GitHub Pages compatible contact form -->
+          <!-- UPDATE: Replace YOUR_FORM_ID with your Formspree form ID from formspree.io -->
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-bracket">&lt;</span>FS<span class="logo-bracket"> /&gt;</span>
+          <p>DevOps & Cloud Engineer</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/Fedia-2211" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/firdavs-samadov-0b82603b6/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:samadovfirdavs02@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Firdavs Samadov. Built with purpose, deployed with CI/CD.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
