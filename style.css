@@ -996,3 +996,208 @@ img { max-width: 100%; display: block; }
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0s !important; transition-duration: 0.1s !important; }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   LANGUAGE SWITCHER & RESUME MODAL
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Language Switcher ─────────────────────────────────────────────────── */
+.lang-switcher {
+  position: relative;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.lang-toggle:hover,
+.lang-toggle.open {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.lang-arrow {
+  font-size: 0.6rem;
+  transition: transform 0.3s;
+}
+.lang-toggle.open .lang-arrow {
+  transform: rotate(180deg);
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 6px;
+  min-width: 160px;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: all 0.25s ease;
+  z-index: 1001;
+}
+.lang-dropdown.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 14px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+.lang-option:hover {
+  background: var(--accent-glow);
+  color: var(--accent);
+}
+.lang-option.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+.lang-flag {
+  font-size: 1.1rem;
+}
+.lang-label {
+  flex: 1;
+}
+.lang-check {
+  font-size: 0.7rem;
+  color: var(--accent);
+}
+
+/* ── Resume Modal ──────────────────────────────────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 36px;
+  max-width: 420px;
+  width: 90%;
+  position: relative;
+  transform: scale(0.9) translateY(20px);
+  transition: transform 0.3s ease;
+  box-shadow: var(--shadow-lg);
+}
+.modal-overlay.open .modal-content {
+  transform: scale(1) translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  line-height: 1;
+}
+.modal-close:hover {
+  color: var(--accent);
+}
+
+.modal-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  padding-right: 30px;
+}
+
+.modal-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.modal-option:hover {
+  border-color: var(--accent);
+  background: var(--accent-glow);
+  color: var(--accent);
+  transform: translateX(4px);
+}
+.modal-option .lang-flag {
+  font-size: 1.4rem;
+}
+.modal-option span:nth-child(2) {
+  flex: 1;
+}
+.modal-option i {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.modal-option:hover i {
+  color: var(--accent);
+}
+
+/* ── Responsive additions ──────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .lang-dropdown {
+    right: -40px;
+  }
+  .modal-content {
+    padding: 28px 24px;
+    margin: 16px;
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "certifications": "Certifications",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name_first": "Firdavs",
+    "name_last": "Samadov",
+    "title": "DevOps & Cloud Engineer",
+    "description": "I design and deploy production-grade cloud infrastructure on AWS — from Terraform provisioning to Kubernetes orchestration, GitOps delivery, and full observability stacks. Security-first, automation-always.",
+    "btn_projects": "View Projects",
+    "btn_contact": "Contact Me",
+    "btn_resume": "Resume",
+    "stat_projects": "Production Projects",
+    "stat_experience": "Years IT Experience",
+    "stat_certs": "Certifications"
+  },
+  "about": {
+    "section_number": "01.",
+    "section_title": "About Me",
+    "p1": "I'm a DevOps and Cloud Engineer with a foundation in networking <strong>(Cisco CCNA)</strong> and systems administration, passionate about building reliable, scalable infrastructure and automating everything that can be automated.",
+    "p2": "I work across the full infrastructure stack — from provisioning cloud resources with <strong>Terraform</strong>, to containerizing applications with <strong>Docker</strong>, deploying on <strong>Kubernetes</strong> (k3s and EKS), and setting up GitOps pipelines with <strong>ArgoCD</strong>.",
+    "p3": "My approach to infrastructure is <strong>security-first</strong> — I integrate scanning tools (Trivy, Checkov, Gitleaks) directly into CI pipelines so security is enforced automatically, not as an afterthought.",
+    "p4": "On the observability side, I build monitoring stacks with <strong>Prometheus, Grafana, and Loki</strong> — because you can't operate what you can't see.",
+    "location": "Tokyo, Japan",
+    "education": "Master's — Shenyang Aerospace University",
+    "status": "Open to DevOps / Cloud / SRE roles"
+  },
+  "skills": {
+    "section_number": "02.",
+    "section_title": "Technical Skills",
+    "cloud": "Cloud (AWS)",
+    "kubernetes": "Kubernetes",
+    "iac": "IaC & Config",
+    "cicd": "CI/CD & GitOps",
+    "devsecops": "DevSecOps",
+    "monitoring": "Monitoring",
+    "containers": "Containers",
+    "os": "OS & Scripting",
+    "networking": "Networking"
+  },
+  "projects": {
+    "section_number": "03.",
+    "section_title": "Featured Projects",
+    "featured_label": "Featured Project",
+    "btn_source": "Source Code",
+    "btn_demo": "Live Demo",
+    "p1_title": "Cloud-Native Commerce Platform",
+    "p1_overlay": "Cloud-Native E-Commerce on AWS EKS",
+    "p1_desc": "Production-grade Saleor Commerce 3.20 deployed on <strong>AWS EKS v1.31</strong> with GitOps (ArgoCD), dual autoscaling (<strong>HPA + KEDA</strong>), 4-stage DevSecOps CI/CD pipeline (Gitleaks + Checkov + Trivy), and full observability (Prometheus + Grafana + Loki). Deployed to both k3s and EKS with <strong>zero Helm chart changes</strong> — proving Kubernetes portability.",
+    "p2_title": "GitOps Kubernetes Platform",
+    "p2_overlay": "GitOps on Kubernetes with ArgoCD",
+    "p2_desc": "2-node <strong>k3s cluster</strong> on AWS with full GitOps workflow: GitHub Actions builds → ECR push → ArgoCD auto-deploys. Wiki.js with HTTPS (cert-manager + Let's Encrypt), custom <strong>Helm charts</strong>, Prometheus + Grafana monitoring, and Loki log aggregation.",
+    "p3_title": "Enterprise Application Platform",
+    "p3_overlay": "3-Tier Infrastructure on AWS",
+    "p3_desc": "3-tier production infrastructure on AWS: <strong>Terraform</strong> (7 modules, 78 resources), <strong>Ansible</strong> (9 roles), Jenkins CI/CD. 6 EC2 servers running Gitea (HA), MySQL 8, RabbitMQ, Memcached. ALB with ACM certificate, CloudWatch monitoring with SNS alerting. Mixed OS: Ubuntu 22.04 + CentOS Stream 9."
+  },
+  "experience": {
+    "section_number": "04.",
+    "section_title": "Experience",
+    "j1_date": "Aug 2023 — Jul 2024",
+    "j1_title": "System Administrator",
+    "j1_company": "Technological University of Tajikistan",
+    "j1_desc": "Installed, configured, and maintained network servers and infrastructure. Monitored local network traffic, diagnosed performance issues, and provided technical support for staff and students. Managed virtualization environments and server maintenance schedules.",
+    "j2_date": "Sep 2022 — Jun 2023",
+    "j2_title": "Network Administrator",
+    "j2_company": "CJSC Bank Arvand",
+    "j2_desc": "Managed secure network operations for a financial institution. Installed, maintained, and monitored Cisco networking devices across bank branches. Implemented network security policies, access controls, and incident response procedures.",
+    "j3_date": "2021 — 2022",
+    "j3_title": "Network Engineer",
+    "j3_company": "Technological University of Tajikistan",
+    "j3_desc": "Installed and maintained network equipment. Organized structured cabling for optimal performance. Provided technical support and troubleshot network connectivity issues."
+  },
+  "education": {
+    "section_number": "05.",
+    "section_title": "Education",
+    "e1_degree": "Master's Degree",
+    "e1_field": "Information & Communication Engineering",
+    "e1_school": "Shenyang Aerospace University, China",
+    "e1_date": "Sep 2024 — Present",
+    "e2_degree": "Bachelor of Engineering",
+    "e2_field": "Computer Systems, Networking & Telecommunications",
+    "e2_school": "Technological University of Tajikistan",
+    "e2_date": "2020 — 2024"
+  },
+  "certifications": {
+    "section_number": "06.",
+    "section_title": "Certifications",
+    "view_credential": "View Credential",
+    "c1": "Decoding DevOps",
+    "c1_issuer": "Udemy · Jun 2026",
+    "c2": "CCNAv7: Enterprise Networking",
+    "c2_issuer": "Cisco · Dec 2022",
+    "c3": "CCNAv7: Switching & Routing",
+    "c3_issuer": "Cisco · Feb 2022",
+    "c4": "CCNA R&S: Intro to Networks",
+    "c4_issuer": "Cisco · May 2021",
+    "c5": "NDG Linux Essentials",
+    "c5_issuer": "Cisco / NetAcad · Apr 2021",
+    "c6": "IT Essentials: PC Hardware",
+    "c6_issuer": "Cisco / NetAcad · Nov 2020"
+  },
+  "github": {
+    "section_number": "07.",
+    "section_title": "GitHub Activity"
+  },
+  "contact": {
+    "section_number": "08.",
+    "section_title": "Get In Touch",
+    "intro": "I'm actively looking for Junior DevOps, Cloud Engineer, or SRE opportunities — remote or based in Tokyo, Japan. Whether you have a question or just want to say hello, feel free to reach out.",
+    "email_label": "Email",
+    "linkedin_label": "LinkedIn",
+    "github_label": "GitHub",
+    "form_name": "Your Name",
+    "form_email": "Your Email",
+    "form_message": "Your Message",
+    "form_send": "Send Message",
+    "form_success": "Message sent successfully!",
+    "form_error": "Something went wrong. Please try again."
+  },
+  "footer": {
+    "tagline": "DevOps & Cloud Engineer",
+    "copyright": "© 2026 Firdavs Samadov. Built with purpose, deployed with CI/CD."
+  },
+  "resume_modal": {
+    "title": "Choose Resume Language",
+    "download_en": "Download English CV",
+    "download_ru": "Download Russian CV",
+    "download_tj": "Download Tajik CV",
+    "close": "Close"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "about": "Дар бораи ман",
+    "skills": "Малакаҳо",
+    "projects": "Лоиҳаҳо",
+    "experience": "Таҷриба",
+    "certifications": "Сертификатҳо",
+    "contact": "Тамос"
+  },
+  "hero": {
+    "greeting": "Салом, ман",
+    "name_first": "Фирдавс",
+    "name_last": "Самадов",
+    "title": "Муҳандиси DevOps ва Cloud",
+    "description": "Ман инфраструктураи cloud-и дараҷаи истеҳсолиро дар AWS тарҳрезӣ ва ҷойгир мекунам — аз таъминоти Terraform то оркестрасияи Kubernetes, таҳвили GitOps ва стекҳои пурраи мушоҳида. Аввал амният, ҳамеша автоматизатсия.",
+    "btn_projects": "Лоиҳаҳои ман",
+    "btn_contact": "Тамос бо ман",
+    "btn_resume": "Резюме",
+    "stat_projects": "Лоиҳаҳои кор",
+    "stat_experience": "Сол таҷрибаи ИТ",
+    "stat_certs": "Сертификатҳо"
+  },
+  "about": {
+    "section_number": "01.",
+    "section_title": "Дар бораи ман",
+    "p1": "Ман муҳандиси DevOps ва Cloud ҳастам бо асоси шабакасозӣ <strong>(Cisco CCNA)</strong> ва маъмурияти системаҳо, ки ба сохтани инфраструктураи боэътимод ва масштабпазир ва автоматикунонии ҳама чизе ки имкон дорад шавқманд ҳастам.",
+    "p2": "Ман бо тамоми стеки инфраструктура кор мекунам — аз таъминоти захираҳои cloud бо <strong>Terraform</strong>, то контейнеризатсия бо <strong>Docker</strong>, ҷойгиркунӣ дар <strong>Kubernetes</strong> (k3s ва EKS) ва танзими хатҳои GitOps бо <strong>ArgoCD</strong>.",
+    "p3": "Равиши ман ба инфраструктура <strong>аввал амният</strong> аст — ман воситаҳои сканкунӣ (Trivy, Checkov, Gitleaks)-ро мустақиман ба хатҳои CI ҷойгир мекунам, то амният худкор таъмин шавад.",
+    "p4": "Дар соҳаи мушоҳида ман стекҳои мониторингро бо <strong>Prometheus, Grafana ва Loki</strong> месозам — зеро чизеро, ки намебинед, идора карда наметавонед.",
+    "location": "Токио, Ҷопон",
+    "education": "Магистратура — Донишгоҳи Ҳавоии Шенян",
+    "status": "Барои вазифаҳои DevOps / Cloud / SRE омода"
+  },
+  "skills": {
+    "section_number": "02.",
+    "section_title": "Малакаҳои техникӣ",
+    "cloud": "Cloud (AWS)",
+    "kubernetes": "Kubernetes",
+    "iac": "IaC ва танзимот",
+    "cicd": "CI/CD ва GitOps",
+    "devsecops": "DevSecOps",
+    "monitoring": "Мониторинг",
+    "containers": "Контейнерҳо",
+    "os": "ОС ва скриптҳо",
+    "networking": "Шабакасозӣ"
+  },
+  "projects": {
+    "section_number": "03.",
+    "section_title": "Лоиҳаҳои интихобшуда",
+    "featured_label": "Лоиҳаи интихобшуда",
+    "btn_source": "Рамзи манбаъ",
+    "btn_demo": "Демо",
+    "p1_title": "Cloud-Native Commerce Platform",
+    "p1_overlay": "Тиҷорати электронии Cloud дар AWS EKS",
+    "p1_desc": "Saleor Commerce 3.20-и дараҷаи истеҳсолӣ дар <strong>AWS EKS v1.31</strong> бо GitOps (ArgoCD), автомасштабкунии дугона (<strong>HPA + KEDA</strong>), хатти 4-марҳилаи DevSecOps CI/CD (Gitleaks + Checkov + Trivy) ва мушоҳидаи пурра (Prometheus + Grafana + Loki). Ҳам дар k3s ва ҳам дар EKS <strong>бе тағйири диаграммаҳои Helm</strong> ҷойгир карда шуд.",
+    "p2_title": "GitOps Kubernetes Platform",
+    "p2_overlay": "GitOps дар Kubernetes бо ArgoCD",
+    "p2_desc": "<strong>Кластери 2-гиреҳии k3s</strong> дар AWS бо ҷараёни пурраи GitOps: GitHub Actions → ECR push → ArgoCD авто-деплой. Wiki.js бо HTTPS (cert-manager + Let's Encrypt), <strong>диаграммаҳои фармоишии Helm</strong>, мониторинги Prometheus + Grafana ва ҷамъоварии логҳои Loki.",
+    "p3_title": "Enterprise Application Platform",
+    "p3_overlay": "Инфраструктураи 3-сатҳа дар AWS",
+    "p3_desc": "Инфраструктураи 3-сатҳаи истеҳсолӣ дар AWS: <strong>Terraform</strong> (7 модул, 78 захира), <strong>Ansible</strong> (9 нақш), Jenkins CI/CD. 6 сервери EC2 бо Gitea (HA), MySQL 8, RabbitMQ, Memcached. ALB бо сертификати ACM, мониторинги CloudWatch бо огоҳиҳои SNS."
+  },
+  "experience": {
+    "section_number": "04.",
+    "section_title": "Таҷрибаи корӣ",
+    "j1_date": "Августи 2023 — Июли 2024",
+    "j1_title": "Маъмури системаҳо",
+    "j1_company": "Донишгоҳи Технологии Тоҷикистон",
+    "j1_desc": "Насб, танзим ва нигоҳдории серверҳои шабакавӣ ва инфраструктура. Мониторинги трафики шабакаи маҳаллӣ, ташхиси мушкилоти самаранокӣ ва пешниҳоди дастгирии техникӣ барои кормандон ва донишҷӯён.",
+    "j2_date": "Сентябри 2022 — Июни 2023",
+    "j2_title": "Маъмури шабака",
+    "j2_company": "ҶСАК Бонки «Арванд»",
+    "j2_desc": "Идоракунии амалиёти бехатари шабака барои муассисаи молиявӣ. Насб, нигоҳдорӣ ва мониторинги дастгоҳҳои шабакавии Cisco дар филиалҳои бонк. Татбиқи сиёсатҳои амнияти шабака ва назорати дастрасӣ.",
+    "j3_date": "2021 — 2022",
+    "j3_title": "Муҳандиси шабака",
+    "j3_company": "Донишгоҳи Технологии Тоҷикистон",
+    "j3_desc": "Насб ва нигоҳдории таҷҳизоти шабакавӣ. Ташкили кабелкашии сохторӣ барои самаранокии баланд. Дастгирии техникӣ ва ҳалли мушкилоти пайвастшавии шабака."
+  },
+  "education": {
+    "section_number": "05.",
+    "section_title": "Таҳсилот",
+    "e1_degree": "Магистратура",
+    "e1_field": "Муҳандисии иттилоот ва коммуникатсия",
+    "e1_school": "Донишгоҳи Ҳавоии Шенян, Чин",
+    "e1_date": "Сентябри 2024 — то ҳол",
+    "e2_degree": "Бакалавр",
+    "e2_field": "Системаҳои компютерӣ, шабакасозӣ ва телекоммуникатсия",
+    "e2_school": "Донишгоҳи Технологии Тоҷикистон",
+    "e2_date": "2020 — 2024"
+  },
+  "certifications": {
+    "section_number": "06.",
+    "section_title": "Сертификатҳо",
+    "view_credential": "Дидани сертификат",
+    "c1": "Decoding DevOps",
+    "c1_issuer": "Udemy · Июни 2026",
+    "c2": "CCNAv7: Enterprise Networking",
+    "c2_issuer": "Cisco · Декабри 2022",
+    "c3": "CCNAv7: Switching & Routing",
+    "c3_issuer": "Cisco · Феврали 2022",
+    "c4": "CCNA R&S: Intro to Networks",
+    "c4_issuer": "Cisco · Майи 2021",
+    "c5": "NDG Linux Essentials",
+    "c5_issuer": "Cisco / NetAcad · Апрели 2021",
+    "c6": "IT Essentials: PC Hardware",
+    "c6_issuer": "Cisco / NetAcad · Ноябри 2020"
+  },
+  "github": {
+    "section_number": "07.",
+    "section_title": "Фаъолияти GitHub"
+  },
+  "contact": {
+    "section_number": "08.",
+    "section_title": "Тамос бо ман",
+    "intro": "Ман фаъолона вазифаҳои Junior DevOps, Cloud Engineer ё SRE-ро ҷустуҷӯ мекунам — дурдаст ё дар Токио, Ҷопон. Агар шумо савол доред ё танҳо мехоҳед салом гӯед — маро озодона навиcед.",
+    "email_label": "Почтаи электронӣ",
+    "linkedin_label": "LinkedIn",
+    "github_label": "GitHub",
+    "form_name": "Номи шумо",
+    "form_email": "Email-и шумо",
+    "form_message": "Паёми шумо",
+    "form_send": "Фиристодани паём",
+    "form_success": "Паём бомуваффақият фиристода шуд!",
+    "form_error": "Ягон чиз хато рафт. Лутфан дубора кӯшиш кунед."
+  },
+  "footer": {
+    "tagline": "Муҳандиси DevOps ва Cloud",
+    "copyright": "© 2026 Фирдавс Самадов. Бо ҳадаф сохта шуд, бо CI/CD ҷойгир карда шуд."
+  },
+  "resume_modal": {
+    "title": "Забони резюмеро интихоб кунед",
+    "download_en": "CV-и англисиро зеркашӣ кунед",
+    "download_ru": "CV-и русиро зеркашӣ кунед",
+    "download_tj": "CV-и тоҷикиро зеркашӣ кунед",
+    "close": "Бастан"
+  }
+}

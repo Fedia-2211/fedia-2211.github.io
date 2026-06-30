@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "about": "Обо мне",
+    "skills": "Навыки",
+    "projects": "Проекты",
+    "experience": "Опыт",
+    "certifications": "Сертификаты",
+    "contact": "Контакт"
+  },
+  "hero": {
+    "greeting": "Привет, я",
+    "name_first": "Фирдавс",
+    "name_last": "Самадов",
+    "title": "Инженер DevOps и Cloud",
+    "description": "Проектирую и развёртываю production-grade облачную инфраструктуру на AWS — от провизионирования с Terraform до оркестрации Kubernetes, доставки через GitOps и полных стеков наблюдаемости. Безопасность прежде всего, автоматизация всегда.",
+    "btn_projects": "Мои проекты",
+    "btn_contact": "Связаться",
+    "btn_resume": "Резюме",
+    "stat_projects": "Рабочих проектов",
+    "stat_experience": "Лет ИТ-опыта",
+    "stat_certs": "Сертификатов"
+  },
+  "about": {
+    "section_number": "01.",
+    "section_title": "Обо мне",
+    "p1": "Я инженер DevOps и Cloud с основой в сетевых технологиях <strong>(Cisco CCNA)</strong> и системном администрировании, увлечённый построением надёжной, масштабируемой инфраструктуры и автоматизацией всего, что можно автоматизировать.",
+    "p2": "Я работаю со всем стеком инфраструктуры — от провизионирования облачных ресурсов с <strong>Terraform</strong>, до контейнеризации с <strong>Docker</strong>, развёртывания на <strong>Kubernetes</strong> (k3s и EKS) и настройки GitOps пайплайнов с <strong>ArgoCD</strong>.",
+    "p3": "Мой подход к инфраструктуре — <strong>безопасность прежде всего</strong>. Я интегрирую инструменты сканирования (Trivy, Checkov, Gitleaks) непосредственно в CI пайплайны, чтобы безопасность обеспечивалась автоматически.",
+    "p4": "В области наблюдаемости я строю стеки мониторинга с <strong>Prometheus, Grafana и Loki</strong> — потому что нельзя управлять тем, чего не видишь.",
+    "location": "Токио, Япония",
+    "education": "Магистратура — Шэньянский Аэрокосмический Университет",
+    "status": "Открыт для ролей DevOps / Cloud / SRE"
+  },
+  "skills": {
+    "section_number": "02.",
+    "section_title": "Технические навыки",
+    "cloud": "Облако (AWS)",
+    "kubernetes": "Kubernetes",
+    "iac": "IaC и конфигурация",
+    "cicd": "CI/CD и GitOps",
+    "devsecops": "DevSecOps",
+    "monitoring": "Мониторинг",
+    "containers": "Контейнеры",
+    "os": "ОС и скрипты",
+    "networking": "Сети"
+  },
+  "projects": {
+    "section_number": "03.",
+    "section_title": "Избранные проекты",
+    "featured_label": "Избранный проект",
+    "btn_source": "Исходный код",
+    "btn_demo": "Демо",
+    "p1_title": "Cloud-Native Commerce Platform",
+    "p1_overlay": "Облачная электронная коммерция на AWS EKS",
+    "p1_desc": "Production-grade Saleor Commerce 3.20 на <strong>AWS EKS v1.31</strong> с GitOps (ArgoCD), двойным автомасштабированием (<strong>HPA + KEDA</strong>), 4-этапным DevSecOps CI/CD пайплайном (Gitleaks + Checkov + Trivy) и полной наблюдаемостью (Prometheus + Grafana + Loki). Развёрнут на k3s и EKS <strong>без изменений Helm чартов</strong> — доказательство переносимости Kubernetes.",
+    "p2_title": "GitOps Kubernetes Platform",
+    "p2_overlay": "GitOps на Kubernetes с ArgoCD",
+    "p2_desc": "2-узловой <strong>кластер k3s</strong> на AWS с полным GitOps потоком: GitHub Actions → ECR push → ArgoCD авто-деплой. Wiki.js с HTTPS (cert-manager + Let's Encrypt), кастомные <strong>Helm чарты</strong>, мониторинг Prometheus + Grafana и агрегация логов Loki.",
+    "p3_title": "Enterprise Application Platform",
+    "p3_overlay": "3-уровневая инфраструктура на AWS",
+    "p3_desc": "3-уровневая production инфраструктура на AWS: <strong>Terraform</strong> (7 модулей, 78 ресурсов), <strong>Ansible</strong> (9 ролей), Jenkins CI/CD. 6 серверов EC2 с Gitea (HA), MySQL 8, RabbitMQ, Memcached. ALB с сертификатом ACM, мониторинг CloudWatch с оповещениями SNS. Смешанная ОС: Ubuntu 22.04 + CentOS Stream 9."
+  },
+  "experience": {
+    "section_number": "04.",
+    "section_title": "Опыт работы",
+    "j1_date": "Авг 2023 — Июл 2024",
+    "j1_title": "Системный администратор",
+    "j1_company": "Технологический Университет Таджикистана",
+    "j1_desc": "Установка, настройка и обслуживание сетевых серверов и инфраструктуры. Мониторинг трафика локальной сети, диагностика проблем производительности и техническая поддержка сотрудников и студентов. Управление виртуализацией и графиками обслуживания серверов.",
+    "j2_date": "Сен 2022 — Июн 2023",
+    "j2_title": "Сетевой администратор",
+    "j2_company": "АООТ Банк «Арванд»",
+    "j2_desc": "Управление безопасными сетевыми операциями финансового учреждения. Установка, обслуживание и мониторинг сетевого оборудования Cisco в филиалах банка. Внедрение политик сетевой безопасности, контроля доступа и процедур реагирования на инциденты.",
+    "j3_date": "2021 — 2022",
+    "j3_title": "Сетевой инженер",
+    "j3_company": "Технологический Университет Таджикистана",
+    "j3_desc": "Установка и обслуживание сетевого оборудования. Организация структурированной кабельной системы для оптимальной производительности. Техническая поддержка и устранение проблем сетевого подключения."
+  },
+  "education": {
+    "section_number": "05.",
+    "section_title": "Образование",
+    "e1_degree": "Магистратура",
+    "e1_field": "Информационная и коммуникационная инженерия",
+    "e1_school": "Шэньянский Аэрокосмический Университет, Китай",
+    "e1_date": "Сен 2024 — н.в.",
+    "e2_degree": "Бакалавриат",
+    "e2_field": "Компьютерные системы, сети и телекоммуникации",
+    "e2_school": "Технологический Университет Таджикистана",
+    "e2_date": "2020 — 2024"
+  },
+  "certifications": {
+    "section_number": "06.",
+    "section_title": "Сертификаты",
+    "view_credential": "Просмотр сертификата",
+    "c1": "Decoding DevOps",
+    "c1_issuer": "Udemy · Июн 2026",
+    "c2": "CCNAv7: Enterprise Networking",
+    "c2_issuer": "Cisco · Дек 2022",
+    "c3": "CCNAv7: Switching & Routing",
+    "c3_issuer": "Cisco · Фев 2022",
+    "c4": "CCNA R&S: Intro to Networks",
+    "c4_issuer": "Cisco · Май 2021",
+    "c5": "NDG Linux Essentials",
+    "c5_issuer": "Cisco / NetAcad · Апр 2021",
+    "c6": "IT Essentials: PC Hardware",
+    "c6_issuer": "Cisco / NetAcad · Ноя 2020"
+  },
+  "github": {
+    "section_number": "07.",
+    "section_title": "Активность на GitHub"
+  },
+  "contact": {
+    "section_number": "08.",
+    "section_title": "Связаться",
+    "intro": "Я активно ищу позиции Junior DevOps, Cloud Engineer или SRE — удалённо или в Токио, Япония. Если у вас есть вопрос или вы просто хотите поздороваться — не стесняйтесь написать.",
+    "email_label": "Электронная почта",
+    "linkedin_label": "LinkedIn",
+    "github_label": "GitHub",
+    "form_name": "Ваше имя",
+    "form_email": "Ваш email",
+    "form_message": "Ваше сообщение",
+    "form_send": "Отправить сообщение",
+    "form_success": "Сообщение успешно отправлено!",
+    "form_error": "Что-то пошло не так. Попробуйте ещё раз."
+  },
+  "footer": {
+    "tagline": "Инженер DevOps и Cloud",
+    "copyright": "© 2026 Фирдавс Самадов. Создано с целью, развёрнуто с CI/CD."
+  },
+  "resume_modal": {
+    "title": "Выберите язык резюме",
+    "download_en": "Скачать CV на английском",
+    "download_ru": "Скачать CV на русском",
+    "download_tj": "Скачать CV на таджикском",
+    "close": "Закрыть"
+  }
+}

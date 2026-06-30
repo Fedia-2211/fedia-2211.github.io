@@ -5,6 +5,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ── Initialize i18n (multilingual support) ─────────────────────────────
+  I18N.init();
+
   // ── Initialize AOS animations ──────────────────────────────────────────
   AOS.init({
     duration: 700,
