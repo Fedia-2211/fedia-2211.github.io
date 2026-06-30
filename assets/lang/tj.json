@@ -27,9 +27,9 @@
     "p2": "Ман бо тамоми стеки инфраструктура кор мекунам — аз таъминоти захираҳои cloud бо <strong>Terraform</strong>, то контейнеризатсия бо <strong>Docker</strong>, ҷойгиркунӣ дар <strong>Kubernetes</strong> (k3s ва EKS) ва танзими хатҳои GitOps бо <strong>ArgoCD</strong>.",
     "p3": "Равиши ман ба инфраструктура <strong>аввал амният</strong> аст — ман воситаҳои сканкунӣ (Trivy, Checkov, Gitleaks)-ро мустақиман ба хатҳои CI ҷойгир мекунам, то амният худкор таъмин шавад.",
     "p4": "Дар соҳаи мушоҳида ман стекҳои мониторингро бо <strong>Prometheus, Grafana ва Loki</strong> месозам — зеро чизеро, ки намебинед, идора карда наметавонед.",
-    "location": "Токио, Ҷопон",
+    "location": "Шэнян, Чин",
     "education": "Магистратура — Донишгоҳи Ҳавоии Шенян",
-    "status": "Барои вазифаҳои DevOps / Cloud / SRE омода"
+    "status": "Барои вазифаҳои DevOps / Cloud омода"
   },
   "skills": {
     "section_number": "02.",
@@ -112,7 +112,7 @@
   "contact": {
     "section_number": "08.",
     "section_title": "Тамос бо ман",
-    "intro": "Ман фаъолона вазифаҳои Junior DevOps, Cloud Engineer ё SRE-ро ҷустуҷӯ мекунам — дурдаст ё дар Токио, Ҷопон. Агар шумо савол доред ё танҳо мехоҳед салом гӯед — маро озодона навиcед.",
+    "intro": "Ман фаъолона вазифаҳои Junior DevOps ё Cloud Engineer -ро ҷустуҷӯ мекунам — дурдаст. Агар шумо савол доред ё танҳо мехоҳед салом гӯед — маро озодона навиcед.",
     "email_label": "Почтаи электронӣ",
     "linkedin_label": "LinkedIn",
     "github_label": "GitHub",

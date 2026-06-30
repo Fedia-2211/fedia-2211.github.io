@@ -27,9 +27,9 @@
     "p2": "I work across the full infrastructure stack — from provisioning cloud resources with <strong>Terraform</strong>, to containerizing applications with <strong>Docker</strong>, deploying on <strong>Kubernetes</strong> (k3s and EKS), and setting up GitOps pipelines with <strong>ArgoCD</strong>.",
     "p3": "My approach to infrastructure is <strong>security-first</strong> — I integrate scanning tools (Trivy, Checkov, Gitleaks) directly into CI pipelines so security is enforced automatically, not as an afterthought.",
     "p4": "On the observability side, I build monitoring stacks with <strong>Prometheus, Grafana, and Loki</strong> — because you can't operate what you can't see.",
-    "location": "Tokyo, Japan",
+    "location": "Shenyang, China",
     "education": "Master's — Shenyang Aerospace University",
-    "status": "Open to DevOps / Cloud / SRE roles"
+    "status": "Open to DevOps / Cloud roles"
   },
   "skills": {
     "section_number": "02.",
@@ -112,7 +112,7 @@
   "contact": {
     "section_number": "08.",
     "section_title": "Get In Touch",
-    "intro": "I'm actively looking for Junior DevOps, Cloud Engineer, or SRE opportunities — remote or based in Tokyo, Japan. Whether you have a question or just want to say hello, feel free to reach out.",
+    "intro": "I'm actively looking for Junior DevOps or Cloud Engineer opportunities — remote. Whether you have a question or just want to say hello, feel free to reach out.",
     "email_label": "Email",
     "linkedin_label": "LinkedIn",
     "github_label": "GitHub",

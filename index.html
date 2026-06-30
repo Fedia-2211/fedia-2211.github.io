@@ -154,26 +154,16 @@
         </div>
         <div class="about-text" data-aos="fade-left">
           <p>
-            I'm a DevOps and Cloud Engineer with a foundation in networking
-            <strong>(Cisco CCNA)</strong> and systems administration, passionate about
-            building reliable, scalable infrastructure and automating everything
-            that can be automated.
+            <p data-i18n-html="about.p1">
           </p>
           <p>
-            I work across the full infrastructure stack — from provisioning cloud
-            resources with <strong>Terraform</strong>, to containerizing applications
-            with <strong>Docker</strong>, deploying on <strong>Kubernetes</strong>
-            (k3s and EKS), and setting up GitOps pipelines with <strong>ArgoCD</strong>.
+            <p data-i18n-html="about.p2">
           </p>
           <p>
-            My approach to infrastructure is <strong>security-first</strong> — I integrate
-            scanning tools (Trivy, Checkov, Gitleaks) directly into CI pipelines so
-            security is enforced automatically, not as an afterthought.
+            <p data-i18n-html="about.p3">
           </p>
           <p>
-            On the observability side, I build monitoring stacks with
-            <strong>Prometheus, Grafana, and Loki</strong> — because you can't
-            operate what you can't see.
+            <p data-i18n-html="about.p4">
           </p>
           <div class="about-info">
             <div class="info-item">
@@ -353,7 +343,7 @@
           <!-- UPDATE: Replace with your actual screenshot -->
           <img src="assets/images/project-commerce.png" alt="Cloud-Native Commerce Platform" onerror="this.style.display='none'">
           <div class="project-image-overlay">
-            <span>Cloud-Native E-Commerce on AWS EKS</span>
+            <span data-i18n="projects.p1_overlay">Cloud-Native E-Commerce on AWS EKS</span>
           </div>
         </div>
         <div class="project-info">
@@ -361,11 +351,7 @@
           <h3 data-i18n="projects.p1_title">Cloud-Native Commerce Platform</h3>
           <div class="project-description">
             <p>
-              Production-grade Saleor Commerce 3.20 deployed on <strong>AWS EKS v1.31</strong>
-              with GitOps (ArgoCD), dual autoscaling (<strong>HPA + KEDA</strong>), 4-stage
-              DevSecOps CI/CD pipeline (Gitleaks + Checkov + Trivy), and full observability
-              (Prometheus + Grafana + Loki). Deployed to both k3s and EKS with
-              <strong>zero Helm chart changes</strong> — proving Kubernetes portability.
+              <p data-i18n-html="projects.p1_desc">
             </p>
           </div>
           <div class="project-tech">
@@ -390,7 +376,7 @@
         <div class="project-image">
           <img src="assets/images/project-gitops.png" alt="GitOps Kubernetes Platform" onerror="this.style.display='none'">
           <div class="project-image-overlay">
-            <span>GitOps on Kubernetes with ArgoCD</span>
+           <span data-i18n="projects.p2_overlay">GitOps on Kubernetes with ArgoCD</span>
           </div>
         </div>
         <div class="project-info">
@@ -398,10 +384,7 @@
           <h3 data-i18n="projects.p2_title">GitOps Kubernetes Platform</h3>
           <div class="project-description">
             <p>
-              2-node <strong>k3s cluster</strong> on AWS with full GitOps workflow:
-              GitHub Actions builds → ECR push → ArgoCD auto-deploys. Wiki.js with
-              HTTPS (cert-manager + Let's Encrypt), custom <strong>Helm charts</strong>,
-              Prometheus + Grafana monitoring, and Loki log aggregation.
+             <p data-i18n-html="projects.p2_desc">
             </p>
           </div>
           <div class="project-tech">
@@ -422,7 +405,7 @@
         <div class="project-image">
           <img src="assets/images/project-enterprise.png" alt="Enterprise Application Platform" onerror="this.style.display='none'">
           <div class="project-image-overlay">
-            <span>3-Tier Infrastructure on AWS</span>
+           <span data-i18n="projects.p3_overlay">3-Tier Infrastructure on AWS</span>
           </div>
         </div>
         <div class="project-info">
@@ -430,10 +413,7 @@
           <h3 data-i18n="projects.p3_title">Enterprise Application Platform</h3>
           <div class="project-description">
             <p>
-              3-tier production infrastructure on AWS: <strong>Terraform</strong> (7 modules, 78 resources),
-              <strong>Ansible</strong> (9 roles), Jenkins CI/CD. 6 EC2 servers running Gitea (HA),
-              MySQL 8, RabbitMQ, Memcached. ALB with ACM certificate, CloudWatch monitoring
-              with SNS alerting. Mixed OS: Ubuntu 22.04 + CentOS Stream 9.
+             <p data-i18n-html="projects.p3_desc">
             </p>
           </div>
           <div class="project-tech">
@@ -467,10 +447,7 @@
             <h3 data-i18n="experience.j1_title">System Administrator</h3>
             <h4 data-i18n="experience.j1_company">Technological University of Tajikistan</h4>
             <p>
-              Installed, configured, and maintained network servers and infrastructure.
-              Monitored local network traffic, diagnosed performance issues, and provided
-              technical support for staff and students. Managed virtualization environments
-              and server maintenance schedules.
+              <p data-i18n="experience.j1_desc">
             </p>
           </div>
         </div>
@@ -481,9 +458,7 @@
             <h3 data-i18n="experience.j2_title">Network Administrator</h3>
             <h4 data-i18n="experience.j2_company">CJSC Bank Arvand</h4>
             <p>
-              Managed secure network operations for a financial institution. Installed,
-              maintained, and monitored Cisco networking devices across bank branches.
-              Implemented network security policies, access controls, and incident response procedures.
+              <p data-i18n="experience.j2_desc">
             </p>
           </div>
         </div>
@@ -494,9 +469,7 @@
             <h3 data-i18n="experience.j3_title">Network Engineer</h3>
             <h4 data-i18n="experience.j3_company">Technological University of Tajikistan</h4>
             <p>
-              Installed and maintained network equipment. Organized structured cabling
-              for optimal performance. Provided technical support and troubleshot
-              network connectivity issues.
+              <p data-i18n="experience.j3_desc">
             </p>
           </div>
         </div>
@@ -548,8 +521,8 @@
         </div>
         <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
           <div class="cert-icon"><i class="fab fa-docker"></i></div>
-          <h3 data-i18n="certifications.c5">Docker</h3>
-          <p data-i18n="certifications.c5_issuer">KodeKloud · Apr 2026</p>
+          <h3 data-i18n="certifications.c7">Docker</h3>
+          <p data-i18n="certifications.c7_issuer">KodeKloud · Apr 2026</p>
           <a href="https://engineer.kodekloud.com/certificate-verification/55bf34eb-ff64-4ae0-ba41-fb9df57ab33d" target="_blank" class="cert-link"><span data-i18n="certifications.view_credential">View Credential</span> <i class="fas fa-external-link-alt"></i></a>
         </div>
         <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
