@@ -342,7 +342,13 @@
           <!-- UPDATE: Replace with your actual screenshot -->
           <img src="assets/images/project-commerce.png" alt="Cloud-Native Commerce Platform" onerror="this.style.display='none'">
           <div class="project-image-overlay">
-            <span data-i18n="projects.p1_overlay">Cloud-Native E-Commerce on AWS EKS</span>
+            <div class="project-image-overlay-inner">
+              <span class="project-image-overlay-label" data-i18n="projects.p1_overlay">Cloud-Native E-Commerce on AWS EKS</span>
+              <div class="project-image-overlay-action">
+                <i class="fas fa-search-plus"></i>
+                <span>Click to view architecture</span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="project-info">
@@ -375,7 +381,13 @@
         <div class="project-image">
           <img src="assets/images/project-gitops.png" alt="GitOps Kubernetes Platform" onerror="this.style.display='none'">
           <div class="project-image-overlay">
-           <span data-i18n="projects.p2_overlay">GitOps on Kubernetes with ArgoCD</span>
+            <div class="project-image-overlay-inner">
+              <span class="project-image-overlay-label" data-i18n="projects.p2_overlay">GitOps on Kubernetes with ArgoCD</span>
+              <div class="project-image-overlay-action">
+                <i class="fas fa-search-plus"></i>
+                <span>Click to view architecture</span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="project-info">
@@ -404,7 +416,13 @@
         <div class="project-image">
           <img src="assets/images/project-enterprise.png" alt="Enterprise Application Platform" onerror="this.style.display='none'">
           <div class="project-image-overlay">
-           <span data-i18n="projects.p3_overlay">3-Tier Infrastructure on AWS</span>
+            <div class="project-image-overlay-inner">
+              <span class="project-image-overlay-label" data-i18n="projects.p3_overlay">3-Tier Infrastructure on AWS</span>
+              <div class="project-image-overlay-action">
+                <i class="fas fa-search-plus"></i>
+                <span>Click to view architecture</span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="project-info">
@@ -429,6 +447,15 @@
       </div>
     </div>
   </section>
+
+  <div id="projectLightbox" class="lightbox-overlay" aria-hidden="true">
+    <div class="lightbox-dialog" role="dialog" aria-modal="true">
+      <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+      <div class="lightbox-content">
+        <img src="" alt="" class="lightbox-image">
+      </div>
+    </div>
+  </div>
 
   <!-- ═══════════════════════════════════════════════════════════════════ -->
   <!-- EXPERIENCE SECTION -->

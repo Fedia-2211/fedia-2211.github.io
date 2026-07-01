@@ -146,6 +146,49 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ── Project diagram lightbox / full-screen preview ─────────────────────
+  const lightboxOverlay = document.getElementById('projectLightbox');
+  const lightboxImage = lightboxOverlay?.querySelector('.lightbox-image');
+  const lightboxClose = lightboxOverlay?.querySelector('.lightbox-close');
+
+  function openProjectLightbox(src, alt) {
+    if (!lightboxOverlay || !lightboxImage) return;
+    lightboxImage.src = src;
+    lightboxImage.alt = alt || 'Project architecture diagram';
+    lightboxOverlay.classList.add('open');
+    document.body.classList.add('modal-open');
+  }
+
+  function closeProjectLightbox() {
+    if (!lightboxOverlay || !lightboxImage) return;
+    lightboxOverlay.classList.remove('open');
+    document.body.classList.remove('modal-open');
+    lightboxImage.src = '';
+    lightboxImage.alt = '';
+  }
+
+  document.querySelectorAll('.project-image').forEach(card => {
+    card.addEventListener('click', () => {
+      const image = card.querySelector('img');
+      if (!image || !image.src) return;
+      openProjectLightbox(image.src, image.alt);
+    });
+  });
+
+  lightboxOverlay?.addEventListener('click', event => {
+    if (event.target === lightboxOverlay) {
+      closeProjectLightbox();
+    }
+  });
+
+  lightboxClose?.addEventListener('click', closeProjectLightbox);
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && lightboxOverlay?.classList.contains('open')) {
+      closeProjectLightbox();
+    }
+  });
+
   // ── Intersection Observer for fade-in ──────────────────────────────────
   const observerOptions = {
     threshold: 0.1,
